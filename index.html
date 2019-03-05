@@ -1,1 +1,30 @@
-<h1>Helloworld Concavie!</h1>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <script type="text/javascript">
+    function file(){
+
+    var fso;
+    try { 
+        fso=new ActiveXObject("Scripting.FileSystemObject"); 
+        var f1 = fso.createtextfile("data.js",true);
+        f1.write("helloworld");
+        f1.close();
+    } catch (e) { 
+        alert("The browser is not supporting");
+    return;
+    } 
+
+    alert("Successful");
+
+    }
+    </script>
+    
+    
+</head>
+<body>
+<button onclick='file()'>create a file</button>
+</body>
+<html>
